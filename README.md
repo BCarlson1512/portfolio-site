@@ -1,2 +1,11 @@
-# portfolio-site
-It's 2023, time to build a portfolio site... oops
+# fresh project
+
+### Usage
+
+Start the project:
+
+```
+deno task start
+```
+
+This will watch the project directory and restart as necessary.
