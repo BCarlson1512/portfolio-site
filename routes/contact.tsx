@@ -1,7 +1,12 @@
-export default function CoontactPage() {
+import Navbar from "../components/Navbar.tsx"
+
+export default function ContactPage() {
     return (
         <>
-            <h1>Contact Page</h1>
+            <Navbar />
+            <div>
+                <h1>Contact Page</h1>
+            </div>
         </>
     )
 }
