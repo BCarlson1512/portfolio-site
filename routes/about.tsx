@@ -8,8 +8,8 @@ export default function AboutPage() {
                 <title>Ben Carlson | About</title>
             </Head>
             <Navbar />
-            <div>
-                <h1>About Page</h1>
+            <div class="flex flex-col items-center justify-center">
+                <div class="text-6xl">About Me...</div>
             </div>
         </>
     )

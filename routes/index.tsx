@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import Card from "../components/Card.tsx";
+import ProjectCard from "../components/ProjectCard.tsx";
 import Navbar from "../components/Navbar.tsx"
 
 interface PageProps {
@@ -64,7 +64,7 @@ export default function Home() {
           <div class="flex py-2">
             {ProjectProps.map((prop:PageProps) =>{
               return(
-                <Card image={prop.image} heading={prop.heading} description={prop.description} url={prop.url}/>
+                <ProjectCard image={prop.image} heading={prop.heading} description={prop.description} url={prop.url}/>
               );
             })
             }
