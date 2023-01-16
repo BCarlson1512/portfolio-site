@@ -1,5 +1,8 @@
 import Navbar from "../components/Navbar.tsx"
 import { Head } from "$fresh/runtime.ts";
+import ImageSlider from "../islands/ImageSlider.tsx";
+
+const imageData = null
 
 export default function AboutPage() {
     return (
@@ -11,6 +14,7 @@ export default function AboutPage() {
             <div class="flex flex-col items-center justify-center">
                 <div class="text-6xl pb-6">About Me...</div>
                 <div class="text-xl pb-4">
+                    <p class="text-center">I'm 22 and finishing off my final semester of Computer Science at the University of Guelph.</p>
                     <p>I currently live in Guelph/St Catharines Ontario but am originally from Calgary, Alberta. Long way from home eh? <br /> </p>
                     <p class="text-center"><b>Precisely 3406 kilometers (2116 miles) for anyone curious</b></p>
                 </div>
@@ -29,12 +33,21 @@ export default function AboutPage() {
                         <img src="/img/bike1.jpg" height="300" width="400"/>
                     </div>
                 </div>
-                <div class="text-xl mb-5">
+                <div class="text-xl pb-5">
                     <p class="text-center">
                         When I'm not exploring, I am chasing adrenaline on a snowboard🏂 in the winter and a bike🚵 on the summer. <br />
                         Nothing beats a bluebird powder day or early season hero dirt!
                     </p>
                 </div>
+                {imageData &&
+                    <div class="flex flex-col items-center justify-center text-3xl mb-5">
+                        <p class="items-center ">
+                            <b>Check out more of my adventures here!</b>
+                        </p>
+                        <ImageSlider images={imageData}/>
+                    </div>
+                }
+                
             </div>
         </>
     )

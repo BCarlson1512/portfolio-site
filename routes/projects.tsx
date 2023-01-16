@@ -18,6 +18,15 @@ export default function ProjectsPage() {
                 <div class="text-5xl">My Work and Self Directed Learning</div>
             </div>
             <div>
+                <div class="flex justify-center text-3xl py-4">
+                    <h3>Key Skills</h3>
+                    <div class="grid grid-cols-4">
+                        <div class="flex flex-col items-center justify-center">
+                            <div></div>
+                            <div><p></p></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-3xl py-4">
                     <h3>Work Experience</h3>
                     <div>
