@@ -1,6 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
-import Card from "../components/Card.tsx";
+import ProjectCard from "../components/ProjectCard.tsx";
 import Navbar from "../components/Navbar.tsx"
+import ProjectItem from "../types/ProjectItem.ts";
 
 interface PageProps {
   image: string,
@@ -9,23 +10,23 @@ interface PageProps {
   url: string
 }
 
-const ProjectProps: PageProps[] = [
+const ProjectProps: ProjectItem[] = [
   {
     image:"/img/web3icon.svg",
     heading: "Web3 Transfer",
-    description: "A small project exploring smart contracts, solidity and react. Utilizes MetaMask to transfer ethereum across accounts.",
-    url: "https://github.com/BCarlson1512/Web3.0_Intro"
+    description: "A small project exploring smart contracts, Solidity and React. Utilizes MetaMask and Solidity to transfer ethereum across accounts.",
+    url: "https://github.com/BCarlson1512/Web3.0_Intro",
   },
   {
     image:"/img/db.ico",
     heading: "Dogs Barking",
     description: "A medium-large scale course management software for University of Guelph students. Utilizes Nextjs, AWS, Docker and Neo4j.",
-    url: "dogs-barking.ca"
+    url: "https://dogs-barking.ca"
   },
   {
     image:"/img/check-list-lined.svg",
     heading: "Deadline Buddy",
-    description: "YUHacks 2021 Award Winning Project. Combines ease of use of a to do list with long term planning capabilities of a calendar. MERN (MongoDB, Express, React, Node) project utilizing Material UI.",
+    description: "YUHacks 2021 Award Winning Project. Combines ease of use of a to do list with long term planning capabilities of a calendar. MERN project utilizing Material UI.",
     url: "https://github.com/BCarlson1512/YuHacks-Deadline-Buddy"
   },
 ]
@@ -62,9 +63,9 @@ export default function Home() {
           <h3 class="text-4xl">Check out some of my work!</h3>
           <a></a>
           <div class="flex py-2">
-            {ProjectProps.map((prop:PageProps) =>{
+            {ProjectProps.map((prop:ProjectItem) =>{
               return(
-                <Card image={prop.image} heading={prop.heading} description={prop.description} url={prop.url}/>
+                <ProjectCard image={prop.image} heading={prop.heading} description={prop.description} url={prop.url} techused={prop.techused}/>
               );
             })
             }
