@@ -1,16 +1,8 @@
 import Navbar from "../components/Navbar.tsx"
 import { Head } from "$fresh/runtime.ts";
 import ResumeCard from "../components/ResumeCard.tsx";
-
-interface ResumeItem {
-
-}
-interface ProjectItem {
-    image: string,
-    heading:string,
-    description:string,
-    url: string
-}
+import ProjectItem from "../types/ProjectItem.ts";
+import ResumeItem from "../types/ResumeItem.ts";
 
 const ResumeItems: ResumeItem[] = []
 const ProjectItems: ProjectItem[] = []
