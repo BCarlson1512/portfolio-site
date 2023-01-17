@@ -38,7 +38,7 @@ export default function Home() {
           <div class="flex py-2">
             {ProjectProps.slice(0,3).map((prop:ProjectItem) =>{
               return(
-                <ProjectCard image={prop.image} heading={prop.heading} description={prop.description} url={prop.url} techused={prop.techused}/>
+                <ProjectCard image={prop.image} heading={prop.heading} description={prop.description} github_url={prop.github_url} url={prop.url} techused={prop.techused}/>
               );
             })
             }

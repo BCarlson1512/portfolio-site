@@ -43,7 +43,7 @@ export default function ProjectsPage() {
                         <div class="grid grid-cols-3 gap-6">
                             {ProjectProps.map(projectItem => {
                                 return(
-                                    <ProjectCard image={projectItem.image} heading={projectItem.heading} description={projectItem.description} url={projectItem.url} />
+                                    <ProjectCard image={projectItem.image} heading={projectItem.heading} description={projectItem.description} github_url={projectItem.github_url} url={projectItem.url} />
                                 )
                             })}
                         </div>
