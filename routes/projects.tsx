@@ -1,56 +1,11 @@
-import Navbar from "../components/Navbar.tsx"
 import { Head } from "$fresh/runtime.ts";
 import ResumeCard from "../components/ResumeCard.tsx";
-import ProjectItem from "../types/ProjectItem.ts";
-import ResumeItem from "../types/ResumeItem.ts";
-import TechItem from "../types/TechItem.ts";
+import Navbar from "../components/Navbar.tsx"
 import TechIcon from "../components/TechIcon.tsx";
-
-const ResumeItems: ResumeItem[] = []
-const ProjectItems: ProjectItem[] = []
-
-const TechItems: TechItem[] = [
-    {
-        name: "Deno",
-        imageclass: "devicon-denojs-original",
-    },
-    {
-        name: "Docker",
-        imageclass: "devicon-docker-plain colored",
-    },
-    {
-        name: "Express",
-        imageclass: "devicon-express-original colored",
-    },
-    {
-        name: "MySQL",
-        imageclass: "devicon-mysql-plain colored",
-    },
-    {
-        name: "MongoDB",
-        imageclass: "devicon-mongodb-plain colored",
-    },
-    {
-        name: "Nodejs",
-        imageclass: "devicon-nodejs-plain colored",
-    },
-    {
-        name: "Nextjs",
-        imageclass: "devicon-nextjs-original colored",
-    },
-    {
-        name: "Neo4j",
-        imageclass: "devicon-neo4j-plain colored",
-    },
-    {
-        name: "Typescript",
-        imageclass: "devicon-typescript-plain colored",
-    },
-    {
-        name: "React",
-        imageclass: "devicon-react-original",
-    },
-]
+import TechProps from "../lib/TechProps.ts";
+import ResumeProps from "../lib/ResumeProps.ts";
+import ProjectProps from "../lib/ProjectProps.ts";
+import ProjectCard from "../components/ProjectCard.tsx";
 
 export default function ProjectsPage() {
     return (
@@ -67,7 +22,7 @@ export default function ProjectsPage() {
                 <div class="flex flex-col justify-center items-center text-3xl py-4">
                     <h3 class="pb-4 pt-2">Key Skills</h3>
                     <div class="grid grid-cols-5 gap-6">
-                        {TechItems.map((item) => {
+                        {TechProps.map((item) => {
                             return (
                                 <TechIcon imageclass={item.imageclass} name={item.name}/>
                             )
@@ -77,14 +32,21 @@ export default function ProjectsPage() {
                 <div class="text-3xl py-4">
                     <h3>Work Experience</h3>
                     <div>
-                        {ResumeItems.map(resumeItem => {
+                        {ResumeProps.map(resumeItem => {
                             <ResumeCard />
                         })}
                     </div>
                 </div>
-                <div class="text-3xl py-4">
-                    <h3>Projects/Self Directed Learning</h3>
-                    <div>
+                <div class="flex flex-col items-center justify-center text-3xl py-4">
+                    <h3 class="pt-1 pb-4">Projects/Self Directed Learning</h3>
+                    <div class="flex items-center justify-center px-16">
+                        <div class="grid grid-cols-3 gap-6">
+                            {ProjectProps.map(projectItem => {
+                                return(
+                                    <ProjectCard image={projectItem.image} heading={projectItem.heading} description={projectItem.description} url={projectItem.url} />
+                                )
+                            })}
+                        </div>
 
                     </div>
                 </div>
