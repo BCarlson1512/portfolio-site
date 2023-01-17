@@ -3,6 +3,6 @@ export default interface ProjectItem {
     heading:string,
     description:string,
     url?: string
-    github_url: string,
+    github_url?: string,
     techused?: string[]
 }
