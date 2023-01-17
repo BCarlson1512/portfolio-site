@@ -7,14 +7,19 @@ export default function ProjectCard(props:ProjectItem){
                 <div>
                     <img src={props.image} alt="card img" height="50" width="50"/>
                 </div>
-                <div class="text-3xl" >
+                <div class="text-3xl py-0.5" >
                     {props.heading}
                 </div>
-                <div>
+                <div class="text-xl text-center px-1.5">
                     {props.description}
                 </div>
-                <div class="h-6 w-6">
-                    <a href={props.url}><img src="/img/github-mark.svg" alt="github alt"/></a>
+                <div class="flex">
+                    {props.github_url && (
+                        <a href={props.github_url}><img src="/img/github-mark.svg" alt="github alt" height="50" width="50"/></a>
+                    )}
+                    {props.url && (
+                        <a href={props.url}><img src="/img/internet1.svg" alt="github alt" height="50" width="50"/></a>
+                    )}
                 </div>
             </div>
         </div>
