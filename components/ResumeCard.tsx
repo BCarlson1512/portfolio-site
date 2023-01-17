@@ -1,7 +1,44 @@
-export default function ResumeCard() {
+import ResumeItem from "../types/ResumeItem.ts";
+
+export default function ResumeCard(props:ResumeItem) {
+    const hasStartDate = props.employmentStart || false
+    const hasEndDate = props.employmentEnd || false
     return(
-        <div>
-            
+        <div class="flex flex-col items-center h-full mx-0.5 px-2 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 hover:border-gray-300 hover:bg-blue-300 hover:drop-shadow-md transition">
+            {props.companyLogo && (
+                <div>
+                    <img src={props.companyLogo} alt="card img" height="50" width="50"/>
+                </div>
+            )}
+            <div class="text-3xl py-0.5" >
+                {props.companyName}
+            </div>
+            <div class="text-2xl py-0.5" >
+                <i>{props.positionName}</i>
+            </div>
+            <div class="text-xl">
+                {hasStartDate && hasEndDate ?
+                    <div><i>{props.employmentStart} - {props.employmentEnd}</i></div>    
+                :
+                    <div><i>{props.employmentStart} - Current</i></div>
+                }
+            </div>
+            <div class="flex flex-col">
+                {props.experiencePoints.map(point => {
+                    return (
+                        <div class="py-2 text-base">{point}</div>
+                    )
+                })}
+            </div>
+            <div class="text-lg"><i>Tech Utilized</i></div>
+            <div class="flex flex-row">
+
+                {props.techused.map(tech => {
+                    return(
+                        <div class="px-2 text-base"><b>{tech}</b></div>
+                    )
+                })}
+            </div>
         </div>
     )
 }
