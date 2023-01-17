@@ -25,7 +25,7 @@ const SocialsProps:Social[] = [
         img: "/img/document-thin.svg",
     },
     {
-        socialLink: "carlsonbenjamint@gmail.com",
+        socialLink: "contact",
         socialName: "Email",
         socialTag: "carlsonbenjamint@gmail.com",
         img: "/img/pen1.svg",
