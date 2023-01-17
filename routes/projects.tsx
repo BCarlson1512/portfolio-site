@@ -29,12 +29,24 @@ export default function ProjectsPage() {
                         })}
                     </div>
                 </div>
-                <div class="text-3xl py-4">
-                    <h3>Work Experience</h3>
-                    <div>
-                        {ResumeProps.map(resumeItem => {
-                            <ResumeCard />
-                        })}
+                <div class="flex flex-col items-center justify-center text-3xl py-4">
+                    <h3 class="pb-4 pt-2">Work Experience</h3>
+                    <div class="flex items-center justify-center px-16">
+                        <div class="grid grid-cols-3 gap-6">
+                            {ResumeProps.map((resumeItem) => {
+                                return(
+                                    <ResumeCard 
+                                        employmentStart={resumeItem.employmentStart} 
+                                        employmentEnd={resumeItem.employmentEnd} 
+                                        positionName={resumeItem.positionName} 
+                                        companyName={resumeItem.companyName} 
+                                        companyLogo={resumeItem.companyLogo} 
+                                        experiencePoints={resumeItem.experiencePoints} 
+                                        techused={resumeItem.techused}
+                                    />
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
                 <div class="flex flex-col items-center justify-center text-3xl py-4">
@@ -47,7 +59,6 @@ export default function ProjectsPage() {
                                 )
                             })}
                         </div>
-
                     </div>
                 </div>
             </div>
