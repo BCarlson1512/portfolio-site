@@ -11,9 +11,9 @@ export default function AboutPage() {
                 <title>Ben Carlson | About</title>
             </Head>
             <Navbar />
-            <div class="flex flex-col items-center justify-center">
-                <div class="text-6xl pb-6">About Me...</div>
-                <div class="text-xl pb-4">
+            <div class="flex flex-col items-center justify-center animate-fadeIn">
+                <div class="text-6xl pb-6 animate-bounceIn">About Me...</div>
+                <div class="text-xl pb-4 animate-bounceIn">
                     <p class="text-center">I'm 22 and finishing off my final semester of Computer Science at the University of Guelph.</p>
                     <p>I currently live in Guelph/St Catharines Ontario but am originally from Calgary, Alberta. Long way from home eh? <br /> </p>
                     <p class="text-center"><b>Precisely 3406 kilometers (2116 miles) for anyone curious</b></p>
@@ -25,7 +25,7 @@ export default function AboutPage() {
                         Obviously this is a fairly ambitious thing, so most days I can be happy being out in the woods exploring non mountainous regions.
                     </p>
                 </div>
-                <div class="flex flex-row py-2 pb-4">
+                <div class="animate-fadeInLong flex flex-row py-2 pb-4">
                     <div class="px-2">
                         <img src="/img/snowboard2.jpg" height="300" width="400"/>
                     </div>
