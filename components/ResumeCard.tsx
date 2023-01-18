@@ -10,13 +10,13 @@ export default function ResumeCard(props:ResumeItem) {
                     <img src={props.companyLogo} alt="card img" height="50" width="50"/>
                 </div>
             )}
-            <div class="text-3xl py-0.5" >
+            <div class="text-3xl py-0.5 text-center" >
                 {props.companyName}
             </div>
             <div class="text-2xl py-0.5" >
                 <i>{props.positionName}</i>
             </div>
-            <div class="text-xl">
+            <div class="text-xl text-center">
                 {hasStartDate && hasEndDate ?
                     <div><i>{props.employmentStart} - {props.employmentEnd}</i></div>    
                 :
@@ -26,16 +26,15 @@ export default function ResumeCard(props:ResumeItem) {
             <div class="flex flex-col">
                 {props.experiencePoints.map(point => {
                     return (
-                        <div class="py-2 text-base">{point}</div>
+                        <div class="py-2 text-base text-center">{point}</div>
                     )
                 })}
             </div>
             <div class="text-lg"><i>Tech Utilized</i></div>
-            <div class="flex flex-row">
-
+            <div class="grid grid-cols-3 gap-6">
                 {props.techused.map(tech => {
                     return(
-                        <div class="px-2 text-base"><b>{tech}</b></div>
+                        <div class="px-2 text-base text-center"><b>{tech}</b></div>
                     )
                 })}
             </div>

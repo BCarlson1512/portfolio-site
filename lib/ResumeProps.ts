@@ -23,7 +23,7 @@ const ResumeProps:ResumeItem[] = [
         employmentStart: "2022-05-01",
         employmentEnd: "2022-08-31",
         companyLogo: "/img/Condoworks.png",
-        experiencePoints: ["Monitored production application for anomalies using Grafana and Graylog, performing maintence impacting over 1000 accounts", "Re-engineered core parsing technology to increase overall parsing accuracy from 91.5% to 93.5% on a data set of 100,000 invoices", "Increased monthly invoice volumes from 6000-9000 through creation and maintenance of scrapers utilzing puppeteer, bluebird and async-await, Worked closely with CTO and lead engineers in an agile work environment"],
+        experiencePoints: ["Monitored production application for anomalies using Grafana and Graylog, performing maintence impacting over 1000 accounts", "Re-engineered core parsing technology to increase overall parsing accuracy from 91.5% to 93.5% on a data set of 100,000 invoices", "Increased monthly invoice volumes from 6000-9000 through creation and maintenance of scrapers utilzing puppeteer, bluebird and async-await", "Worked closely with CTO and lead engineers in an agile work environment"],
         techused: ["Javascript", "Nodejs", "MySQL", "Graylog", "Grafana", "Gitlab"]
     },
 ]
