@@ -7,7 +7,7 @@ export default function ProjectCard(props:ProjectItem){
                 <div>
                     <img src={props.image} alt="card img" height="50" width="50"/>
                 </div>
-                <div class="text-3xl py-0.5" >
+                <div class="text-3xl py-0.5 text-center" >
                     {props.heading}
                 </div>
                 <div class="text-xl text-center px-1.5">
