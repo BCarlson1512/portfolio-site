@@ -4,9 +4,9 @@ export default function ResumeCard(props:ResumeItem) {
     const hasStartDate = props.employmentStart || false
     const hasEndDate = props.employmentEnd || false
     return(
-        <div class="flex flex-col items-center h-full mx-0.5 px-2 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 hover:border-gray-300 hover:bg-blue-300 hover:drop-shadow-md transition">
+        <div class="flex flex-col items-center h-full mx-0.5 px-3 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 hover:border-gray-300 hover:bg-blue-300 hover:drop-shadow-md transition">
             {props.companyLogo && (
-                <div>
+                <div class="pt-2">
                     <img src={props.companyLogo} alt="card img" height="50" width="50"/>
                 </div>
             )}
@@ -31,10 +31,10 @@ export default function ResumeCard(props:ResumeItem) {
                 })}
             </div>
             <div class="text-lg"><i>Tech Utilized</i></div>
-            <div class="grid grid-cols-3 gap-6">
+            <div class="grid grid-cols-3 gap-6 pb-2">
                 {props.techused.map(tech => {
                     return(
-                        <div class="px-2 text-base text-center"><b>{tech}</b></div>
+                        <div class="px-4 mx-2 text-base text-center"><b>{tech}</b></div>
                     )
                 })}
             </div>

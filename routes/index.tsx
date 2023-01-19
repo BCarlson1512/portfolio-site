@@ -22,7 +22,7 @@ export default function Home() {
             <p class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-600">Ben</p>
           </div>
         </div>
-        <div class="flex justify-center text-3xl py-4">
+        <div class="flex justify-center text-3xl py-4 border-b-1">
             <h3 class="flex">Passionate Developer💻 Gym💪 and Granola Addict 🌲⛰️</h3>
         </div>
         <div class="animate-bounceIn">
@@ -33,7 +33,7 @@ export default function Home() {
           <div class="flex flex-col justify-center text-center py-2">When I'm not solving problems, I'm more than likely spending my time outdoors, most likely near mountains of some sort or pushing for a new PR in the gym.</div>
         </>
         <div class="flex flex-col justify-center text-center py-4">
-          <h3 class="text-4xl">Check out some of my work!</h3>
+          <h3 class="text-4xl mb-2">Check out some of my work!</h3>
           <a></a>
           <div class="flex py-2">
             {ProjectProps.slice(0,3).map((prop:ProjectItem) =>{

@@ -38,6 +38,14 @@ const TechProps:TechItem[] = [
         imageclass: "devicon-typescript-plain colored",
     },
     {
+        name: "Tailwind",
+        imageclass: "devicon-tailwindcss-plain colored",
+    },
+    {
+        name: "Python",
+        imageclass: "devicon-python-plain",
+    },
+    {
         name: "React",
         imageclass: "devicon-react-original",
     },

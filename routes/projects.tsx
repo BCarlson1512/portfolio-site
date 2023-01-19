@@ -16,12 +16,12 @@ export default function ProjectsPage() {
             </Head>
             <Navbar />
             <div class="flex flex-col justify-center items-center py-4 animate-fadeIn">
-                <div class="text-5xl">My Work and Self Directed Learning</div>
+                <div class="text-5xl border-b-1 w-[48vw] text-center pb-4">My Work and Self Directed Learning</div>
             </div>
             <div>
-                <div class="flex flex-col justify-center items-center text-3xl py-4 animate-bounceIn">
+                <div class="flex flex-col justify-center items-center text-3xl pt-2 pb-4 animate-bounceIn">
                     <h3 class="pb-4 pt-2">Key Skills</h3>
-                    <div class="grid grid-cols-5 gap-6">
+                    <div class="grid grid-cols-6 gap-6">
                         {TechProps.map((item) => {
                             return (
                                 <TechIcon imageclass={item.imageclass} name={item.name}/>
