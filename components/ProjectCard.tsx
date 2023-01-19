@@ -17,7 +17,7 @@ export default function ProjectCard(props:ProjectItem){
                 {props.techused && (
                     <div class="flex flex-col my-2">
                         <h3 class="text-xl my-1 text-center">Tech used:</h3>
-                        <div class="grid grid-cols-3">
+                        <div class="grid grid-cols-3 gap-6">
                             {props.techused?.map((item) => {
                                 return (
                                     <TechIcon imageclass={item.imageclass} name={item.name}/>
