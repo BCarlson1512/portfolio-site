@@ -49,5 +49,17 @@ const TechProps:TechItem[] = [
         name: "React",
         imageclass: "devicon-react-original",
     },
+    {
+        name: "Solidity",
+        imageclass: "devicon-solidity-plain colored"
+    },
+    {
+        name: "Javascript",
+        imageclass: "devicon-javascript-plain colored"
+    },
+    {
+        name:"C",
+        imageclass:"devicon-c-plain colored"
+    }
 ]
 export default TechProps;

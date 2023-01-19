@@ -22,7 +22,7 @@ export default function ProjectsPage() {
                 <div class="flex flex-col justify-center items-center text-3xl pt-2 pb-4 animate-bounceIn">
                     <h3 class="pb-4 pt-2">Key Skills</h3>
                     <div class="grid grid-cols-6 gap-6">
-                        {TechProps.map((item) => {
+                        {TechProps.slice(0,12).map((item) => {
                             return (
                                 <TechIcon imageclass={item.imageclass} name={item.name}/>
                             )
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
                         <div class="grid grid-cols-3 gap-6">
                             {ProjectProps.map(projectItem => {
                                 return(
-                                    <ProjectCard image={projectItem.image} heading={projectItem.heading} description={projectItem.description} github_url={projectItem.github_url} url={projectItem.url} />
+                                    <ProjectCard image={projectItem.image} heading={projectItem.heading} description={projectItem.description} github_url={projectItem.github_url} url={projectItem.url} techused={projectItem.techused} />
                                 )
                             })}
                         </div>
