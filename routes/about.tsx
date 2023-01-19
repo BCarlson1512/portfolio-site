@@ -27,10 +27,10 @@ export default function AboutPage() {
                 </div>
                 <div class="animate-fadeInLong flex flex-row py-2 mb-4 w-[50vw] border-b-1 items-center justify-center">
                     <div class="px-2 border-r-1">
-                        <img class="drop-shadow-lg" src="/img/snowboard2.jpg" height="300" width="400"/>
+                        <img class="drop-shadow-lg" src="/img/snowboard2-min.jpg" height="300" width="400"/>
                     </div>
                     <div class="px-2">
-                        <img class="drop-shadow-lg" src="/img/bike1.jpg" height="300" width="400"/>
+                        <img class="drop-shadow-lg" src="/img/bike1-min.jpg" height="300" width="400"/>
                     </div>
                 </div>
                 <div class="text-xl pb-5">
