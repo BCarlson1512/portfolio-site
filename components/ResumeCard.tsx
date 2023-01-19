@@ -4,9 +4,9 @@ export default function ResumeCard(props:ResumeItem) {
     const hasStartDate = props.employmentStart || false
     const hasEndDate = props.employmentEnd || false
     return(
-        <div class="flex flex-col items-center h-full mx-0.5 px-3 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 hover:border-gray-300 hover:bg-blue-300 hover:drop-shadow-md transition">
+        <div class="flex flex-col items-center h-full mx-0.5 px-3 bg-blue-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 border border-gray-100 hover:border-gray-300 hover:bg-blue-300 hover:drop-shadow-lg drop-shadow-md transition">
             {props.companyLogo && (
-                <div class="pt-2">
+                <div class="my-1 py-4">
                     <img src={props.companyLogo} alt="card img" height="50" width="50"/>
                 </div>
             )}
