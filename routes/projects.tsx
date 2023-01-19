@@ -21,7 +21,7 @@ export default function ProjectsPage() {
             <div>
                 <div class="flex flex-col justify-center items-center text-3xl py-4 animate-bounceIn">
                     <h3 class="pb-4 pt-2">Key Skills</h3>
-                    <div class="grid grid-cols-5 gap-6">
+                    <div class="grid grid-cols-6 gap-6">
                         {TechProps.map((item) => {
                             return (
                                 <TechIcon imageclass={item.imageclass} name={item.name}/>

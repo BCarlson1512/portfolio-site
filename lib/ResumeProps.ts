@@ -3,9 +3,10 @@ import ResumeItem from "../types/ResumeItem.ts";
 const ResumeProps:ResumeItem[] = [
     {
         companyName: "Web-Us",
-        positionName: "Full-Stack Developer",
+        positionName: "Co-Founder/Full-Stack Developer",
         employmentStart: "2020-08-01",
         employmentEnd: "2021-09-30",
+        companyLogo: "/img/WebusLogo.png",
         experiencePoints: ["Worked closeley with clients by creating custom tailored mockups for their web application, deployed responsive, custom tailored web applications powered by React and Express to Heroku and Cloudflare", "Offered data storage, email and support using CPanel"],
         techused: ["React", "Nodejs", "MongoDB", "Express", "Heroku"]
     },
@@ -14,6 +15,7 @@ const ResumeProps:ResumeItem[] = [
         positionName: "Undergraduate Teaching Assistant",
         employmentStart: "2021-09-01",
         employmentEnd: "2021-12-23",
+        companyLogo: "/img/UofG.jpg",
         experiencePoints: ["Provided educational support to 300 students regarding Object Oriented Programming concepts VIA office hours", "Presented weekly lab sessions to sections of 40 students discussing common OOP concepts such as encapsulation", "Marked 8 assessments, 3 exams in groups of 40-80 and participated in weekly progress reports with the professor and teaching team"],
         techused: ["Java"]
     },
