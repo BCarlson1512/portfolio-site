@@ -34,7 +34,7 @@ export default function ResumeCard(props:ResumeItem) {
             <div class="grid grid-cols-3 gap-6 pb-2">
                 {props.techused.map(tech => {
                     return(
-                        <div class="px-2 text-base text-center"><b>{tech}</b></div>
+                        <div class="px-4 mx-2 text-base text-center"><b>{tech}</b></div>
                     )
                 })}
             </div>
