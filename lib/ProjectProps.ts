@@ -8,17 +8,17 @@ const ProjectProps: ProjectItem[] = [
     github_url: "https://github.com/BCarlson1512/Web3.0_Intro",
 },
 {
+    image:"/img/check-list-lined.svg",
+    heading: "Deadline Buddy",
+    description: "YUHacks 2021 Award Winning Project. Combines ease of use of a to do list with long term planning capabilities of a calendar. MERN project utilizing Material UI.",
+    github_url: "https://github.com/BCarlson1512/YuHacks-Deadline-Buddy"
+},
+{
     image:"/img/db.ico",
     heading: "Dogs Barking",
     description: "A medium-large scale course management software for University of Guelph students. Utilizes Nextjs, AWS, Docker and Neo4j.",
     github_url: "https://github.com/BCarlson1512/dogs-barking-public",
     url: "https://dogs-barking.ca"
-},
-{
-    image:"/img/check-list-lined.svg",
-    heading: "Deadline Buddy",
-    description: "YUHacks 2021 Award Winning Project. Combines ease of use of a to do list with long term planning capabilities of a calendar. MERN project utilizing Material UI.",
-    github_url: "https://github.com/BCarlson1512/YuHacks-Deadline-Buddy"
 },
 {
     image:"/img/mountain1.svg",
