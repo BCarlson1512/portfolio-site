@@ -12,7 +12,7 @@ export default function TechIcon(props: PageProps) {
             <Head>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
             </Head>
-            <div class="animate-bounceIn flex flex-col items-center justify-center text-2xl px-0.5 py-0.5 border-1 rounded-md hover:border-gray-100 drop-shadow-sm hover:drop-shadow-lg transition">
+            <div class="animate-bounceIn flex flex-col items-center justify-center text-2xl px-2 mx-1 py-0.5 border-b-1 hover:border-gray-100 drop-shadow-sm hover:drop-shadow-lg transition">
                 <div>
                     <i class={props.imageclass}></i>
                 </div>
