@@ -19,7 +19,7 @@ export default function Home() {
         <div class="w-screen h-screen z-0 absolute" style="background-image:url(../img/hero-bgnd2.jpg); background-size: cover; background-position:center; filter: blur(4px); -webkit-filter: blur(4px); box-shadow: 0 4px 4px 0 #00000040, inset 0 0 0 1000px rgba(0,0,0,.5);"></div>
       </div>
       <div class="h-screen flex flex-col items-center justify-center pb-4 z-10 text-gray-200">
-        <div class="flex items-center text-8xl space-x-3 z-10 py-5 animate-fadeIn">
+        <div class="flex items-center justify-center text-8xl space-x-3 z-10 py-5 animate-fadeIn w-[50vw]">
             <h1 class="flex">Hi...<p class="animate-waving-hand">👋</p> I'm</h1>
             <p class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-600">Ben</p>
         </div>
