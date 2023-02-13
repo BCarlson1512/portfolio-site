@@ -7,7 +7,7 @@ const ResumeProps:ResumeItem[] = [
         employmentStart: "2020-08-01",
         employmentEnd: "2021-09-30",
         companyLogo: "/img/WebusLogo.png",
-        experiencePoints: ["Worked closeley with clients by creating custom tailored mockups for their web application, deployed responsive, custom tailored web applications powered by React and Express to Heroku and Cloudflare", "Offered data storage, email and support using CPanel"],
+        experiencePoints: ["Worked closely with clients by creating custom tailored mockups for their web application", "Deployed responsive, custom tailored web applications powered by React and Express to Heroku and Cloudflare", "Offered data storage, email and support using CPanel"],
         techused: [
             {
                 name: "React",

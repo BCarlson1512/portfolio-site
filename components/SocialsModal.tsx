@@ -7,7 +7,7 @@ interface PageProps {
 
 export default function SocialsModal(props: PageProps) {
     return(
-        <div class="flex flex-row justify-center items-center space-x-10 py-4">
+        <div class="flex flex-row justify-center items-center space-x-10 py-8">
             {props.socials.map(social => {
                 return(
                     <SocialsButton 
