@@ -11,7 +11,7 @@ export default function SocialsButton(props:Social) {
     return (
         <>
             <a 
-            class="flex flex-row justify-center items-center bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border rounded-lg border-2 border-gray-200 hover:border-gray-400 px-4 py-2 drop-shadow-md transition" 
+            class="flex flex-row justify-center items-center bg-emerald-300 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border rounded-lg border-2 border-gray-200 hover:border-gray-400 px-4 py-2 drop-shadow-md transition" 
             href={props.socialLink} 
             onMouseEnter={hoverHandler} 
             onMouseLeave={hoverHandler}
